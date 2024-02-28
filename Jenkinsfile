@@ -3,19 +3,19 @@ pipeline {
     // agent ant
     stages {
         stage('Build') {
-            steps {
-                echo 'Building.............'
-            }
-       }
-    stage('Test') {
-        steps {
-          echo 'Testing..'
+             steps {
+                 echo 'Building.............'
+             }
         }
-    }  
-    stage('Deploy') {
-        steps {
-            echo 'Deploying....'
+     stage('Test') {
+         steps {
+             echo 'Testing..'
          }
-       }
-     }       
+     }  
+     stage('Deploy') {
+         steps {
+             echo 'Deploying....'
            }
+        }
+      }
+        }
